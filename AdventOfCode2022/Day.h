@@ -35,7 +35,7 @@ protected:
 	}
 	ifstream getInput() {
 		ifstream file;
-		file.open("Inputs/"+day + ".txt");
+		file.open(day + ".txt");
 		if (!file.is_open()) {
 			cout << "File " << Day::day << ".txt probably doesn't exist yet." << endl;
 			throw(1);
